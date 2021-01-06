@@ -7,3 +7,9 @@ export const newStoriesUrl = `${baseUrl}newStories.json`;
 
 
 export const storyUrl = `${baseUrl}item/`;
+
+export const getStoryIds = async () => {
+    const result = await axios.get(newStoriesUrl).then(data => data );
+
+    return result;
+}
