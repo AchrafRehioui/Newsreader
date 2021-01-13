@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { getStory } from '../services/hnApi';
 
-export const Story = () => {
+export const Story = props => {
 
     useEffect(() => {
 
     }, []);
 
-    return <p>I am a story !</p>;
+    return <p>I am a story ! {JSON.stringify(props)}</p>;
 }
