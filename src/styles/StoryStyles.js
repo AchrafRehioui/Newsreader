@@ -44,8 +44,13 @@ export const StoryMeta = styled.div`
     content: '•'
     margin: 0 7px;
   }
-  
+
   .story__meta-bold {
     font-weight: bold;
   }
+`;
+
+export const StoryMetaElement = styled.span`
+  font-weight: bold;
+  color: ${props => props.color || 'red'};
 `;
