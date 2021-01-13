@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getStory } from '../services/hnApi';
 import { StoryWrapper, StoryMeta, StoryMetaElement, StoryTitle } from '../styles/StoryStyles';
+import { mapTime } from '../mappers/mapTime';
 
 export const Story = ({ storyId }) => {
 
@@ -21,8 +22,8 @@ export const Story = ({ storyId }) => {
                     <StoryMetaElement color="#000">By: </StoryMetaElement>{story.by}
                 </span>
                 <span data-testid="story-time">
-                    <StoryMetaElement color="#000">Posted: </StoryMetaElement>
-                    {story.time}
+                    <StoryMetaElement color="#000">Posted: </StoryMetaElement>{` `}
+                    {mapTime(story.time)}
                 </span>
             </StoryMeta>
         </StoryWrapper>
