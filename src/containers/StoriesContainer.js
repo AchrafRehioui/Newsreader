@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getStoryIds } from '../services/hnApi';
+import { getStoryIds, getStory } from '../services/hnApi';
 
 export const StoriesContainer = () => {
 
@@ -7,6 +7,7 @@ export const StoriesContainer = () => {
 
     useEffect(() => {
         getStoryIds().then(lemons => setStoryIds(lemons));
+        getStory(25760263).then(data => console.log(data));
     }, [])
 
     return (
