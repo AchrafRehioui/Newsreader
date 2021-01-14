@@ -14,7 +14,7 @@ export const StoriesContainer = () => {
         console.log('count', count);
         getStoryIds().then(data => setStoryIds(data));
         console.log('count', count);
-    }, [count])
+    }, [])
 
     return (
         <>
