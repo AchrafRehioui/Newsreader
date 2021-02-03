@@ -2,8 +2,6 @@
 
 ### [Live Site](https://news-reader-739fe.web.app/)
 
-![Chat Application](https://i.ibb.co/4p9vjKH/Newsreaders.jpg)
-
 ## Introduction
 This is a code repository for the corresponding project Newsreader 
 
